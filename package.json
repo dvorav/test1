@@ -15,7 +15,7 @@
     "install": "cd client && npm install",
     "build": "npm run seed && npm run build",
     "heroku-postbuild": "npm run build \"node run seed\"",
-    "seed": "npm seeders/seed.js"
+    "seed": "node seeders/seed.js"
    
     
   },

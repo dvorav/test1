@@ -5,6 +5,7 @@ mongoose.connect("mongodb://localhost/reactjob", {
   useNewUrlParser: true,
   useFindAndModify: false,
 });
+console.log("RUNNING!")
 
 const jobSeed = [
   {
