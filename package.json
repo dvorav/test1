@@ -10,14 +10,12 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"node run client\"",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \" run client\" \"node run seed\"",
     "client": "cd client && npm run start",
+    "seed": "node seeders/seed.js",
     "install": "cd client && npm install",
-    "build": "npm run seed && npm run build",
-    "heroku-postbuild": "npm run build \"node run seed\"",
-    "seed": "node seeders/seed.js"
-   
-    
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
