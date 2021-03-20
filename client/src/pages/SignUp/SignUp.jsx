@@ -5,7 +5,6 @@ import { Form, Button } from "react-bootstrap/";
 import "../Login/Login.css";
 import { Link } from "react-router-dom";
 
-
 const SignUp = ({ history }) => {
   const handleSignUp = useCallback(
     async (event) => {
@@ -28,7 +27,7 @@ const SignUp = ({ history }) => {
       <div className="loginContainer centered">
         <h1 className="m-5">Register</h1>
 
-        <div className="">
+        <div>
           <Form onSubmit={handleSignUp}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -47,15 +46,22 @@ const SignUp = ({ history }) => {
               />
             </Form.Group>
             <div className="middle">
-              <Button bsPrefix="over" className="btn btn-danger btn-lg m-3" to="./Login" as={Link}>
-             Login
+              <Button
+                bsPrefix="over"
+                className="btn btn-danger btn-lg m-3"
+                to="./Login"
+                as={Link}
+              >
+                Login
               </Button>
-            
 
-            <div>
-              <Button className="btn btn-danger btn-lg m-3 over" type="submit">
-                Sign up
-              </Button>
+              <div>
+                <Button
+                  className="btn btn-danger btn-lg m-3 over"
+                  type="submit"
+                >
+                  Sign up
+                </Button>
               </div>
             </div>
           </Form>
