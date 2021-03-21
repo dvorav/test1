@@ -62,7 +62,7 @@ function Profile() {
               <div className="offset-sm-2 col-sm-8 offset-sm-2">
                 <p className="saveTitle">Saved Jobs</p>
                 <Table striped bordered hover size="lg">
-                  <thead className="thead-light">
+                  <thead>
                     <tr>
                       <th>Job Title</th>
                       <th>Company</th>
@@ -72,7 +72,7 @@ function Profile() {
                       <th>Remove</th>
                     </tr>
                   </thead>
-                  <tbody className="table body">
+                  <tbody>
                     {jobsDb.map((job) => (
                       <tr key={job.id}>
                         <th>{job.title}</th>
