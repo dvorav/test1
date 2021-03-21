@@ -57,12 +57,14 @@ function Profile() {
             </div>
           </div>
 
-          <div className="">
-            <div>
+          <div className="container">
+         
+
+            <div className="row">
               <div className="offset-sm-2 col-sm-8 offset-sm-2">
-                <h1 className="">Saved Jobs</h1>
+                <p className="saveTitle">Saved Jobs</p>
                 <Table striped bordered hover size="lg">
-                  <thead className="table">
+                  <thead className="thead-light">
                     <tr>
                       <th>Job Title</th>
                       <th>Company</th>
@@ -99,5 +101,3 @@ function Profile() {
 }
 
 export default Profile;
-
-

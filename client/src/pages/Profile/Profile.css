@@ -65,19 +65,16 @@ th {
   margin-right: auto;
 }
 
-.savetitle {
+.saveTitle {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 20px;
-    display: table;
     text-align: center;
     border: 1px solid lightgrey;
     font-family: 'Paytone One', sans-serif;
-    color: black;
-    opacity: 70%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+    font-size: 35px;
     
 }
