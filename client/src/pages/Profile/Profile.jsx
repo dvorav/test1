@@ -60,7 +60,7 @@ function Profile() {
           <div className="container">
             <div className="row">
               <div className="offset-sm-2 col-sm-8 offset-sm-2">
-                <p className="saveTitle">Saved Jobs</p>
+                <h5 className="saveTitle">Saved Jobs</h5>
                 <Table striped bordered hover size="lg">
                   <thead>
                     <tr>
