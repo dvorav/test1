@@ -1,20 +1,26 @@
 import React, { useContext } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import app from "../../base";
 import { AuthContext } from "../../Auth";
 
 function Header() {
   const { currentUser } = useContext(AuthContext);
-  // console.log(currentUser);
+
   return (
     <>
       {!currentUser ? (
-        <Redirect to="/login" />
+        ""
       ) : (
-        <Navbar className="d-flex" style={ {backgroundColor: '485461', backgroundImage: 'linear-gradient(315deg, #485461 0%, #28313b 74%)'}} expand="lg" variant="dark" fixed="bottom">
-          <Navbar.Brand to="/jobpage" as={Link}>
-            Job Page
+        <Navbar
+          className="d-flex"
+          style={{ backgroundColor: "485461", backgroundImage: "linear-gradient(315deg, #485461 0%, #28313b 74%)" }}
+          expand="lg"
+          variant="dark"
+          fixed="bottom"
+        >
+          <Navbar.Brand to="/profile" as={Link}>
+            Match't
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -26,7 +32,6 @@ function Header() {
                 Search
               </Nav.Link>
 
-            
               <button
                 style={{
                   border: "none",
